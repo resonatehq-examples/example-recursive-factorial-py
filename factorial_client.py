@@ -2,7 +2,7 @@ from resonate import Resonate
 from argparse import ArgumentParser
 
 resonate = Resonate.remote(
-    group="invoke-factorial",
+    group="factorial-client",
 )
 
 def main():

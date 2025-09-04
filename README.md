@@ -1,8 +1,15 @@
-# Recursive factorial | Resonate example application
+![resonate example app banner](/assets/resonate-example-app-readme-banner.png)
 
-![distributed factorial gif](./distributed_factorial_gif.gif)
+# Recursive factorial
+
+**Resonate Python SDK**
 
 This example showcases Resonate's ability to durably invoke functions recursively.
+
+Instructions on [How to run this example](#how-to-run-this-example) are below.
+
+![distributed factorial gif](./assets/
+distributed_factorial_gif.gif)
 
 ## The problem
 
@@ -97,5 +104,5 @@ uv run factorial_worker.py
 Calculate a factorial
 
 ```shell
-uv run invoke_factorial.py 6
+uv run factorial_client.py 6
 ```
