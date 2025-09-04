@@ -8,8 +8,7 @@ This example showcases Resonate's ability to durably invoke functions recursivel
 
 Instructions on [How to run this example](#how-to-run-this-example) are below.
 
-![distributed factorial gif](./assets/
-distributed_factorial_gif.gif)
+![distributed factorial gif](/assets/distributed_factorial_gif.gif)
 
 ## The problem
 
