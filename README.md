@@ -71,12 +71,11 @@ If any other operation needs the value of factorial 5, it can use the promise ID
 This example has a single `factorial()` funtion that calls itself recursively:
 
 ```python
-@resonate.register
-def factorial(ctx, n):
+async def factorial(ctx: Context, n: int) -> int:
     print(f"Calculating factorial of {n}")
     if n <= 1:
         return 1
-    result = yield ctx.rpc("factorial", n - 1).options(target="poll://any@factorial-worker", id=f"factorial-{n-1}")
+    result = await ctx.options(target="factorial-worker").rpc("factorial", n - 1)
     return n * result
 ```
 
